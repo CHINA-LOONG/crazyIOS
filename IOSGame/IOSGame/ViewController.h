@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoongGameView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIAlertViewDelegate,LoongGameViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *startBtn;
 @property (strong, nonatomic) IBOutlet UILabel *timeText;
